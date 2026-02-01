@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ฟอนต์ศิลป์และหม่นหมอง */
+:root {
+  font-family: 'Playfair Display', 'Noto Serif Thai', serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #d1d5db;
+  background-color: #18181b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+a {
+  font-weight: 400;
+  color: #a1a1aa;
+  text-decoration: underline dotted 1px;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #fff;
+  text-decoration: underline solid 1.5px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #18181b 60%, #23272f 100%);
+  letter-spacing: 0.01em;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', 'Noto Serif Thai', serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+
+button {
+  border-radius: 6px;
+  border: 1px solid #27272a;
+  padding: 0.5em 1.1em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Noto Serif Thai', 'Playfair Display', serif;
+  background-color: #18181b;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: border 0.3s, background 0.3s, color 0.3s;
+  box-shadow: 0 2px 16px 0 #0002;
+}
+button:hover {
+  border-color: #52525b;
+  background: #23272f;
+  color: #fff;
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid #71717a;
+}
+
+
+::selection {
+  background: #fff;
+  color: #18181b;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #23272f;
+}
+::-webkit-scrollbar-thumb {
+  background: #18181b;
+  border-radius: 8px;
+}
