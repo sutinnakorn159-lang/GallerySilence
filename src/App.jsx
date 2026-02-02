@@ -305,7 +305,7 @@ const App = () => {
             {/* ลบปุ่มออกแล้ว */}
           </nav>
 
-      {/* Main Content */}
+      {/* Main Content */}  
       <main className="container mx-auto px-6 md:px-12 pt-40 pb-20">
         
         {/* Minimal Hero */}
