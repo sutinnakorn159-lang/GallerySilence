@@ -295,32 +295,15 @@ const App = () => {
       />
 
       {/* Art Header & Nav */}
-      <nav className="fixed top-0 left-0 w-full px-8 py-6 flex flex-col md:flex-row justify-between items-start md:items-center z-40 bg-gradient-to-b from-black/90 to-transparent border-b border-zinc-900/40">
-        <div className="flex flex-col gap-1">
-          <h1 className="text-2xl md:text-4xl font-serif text-white tracking-tight drop-shadow-lg select-none">
-            GALLERY OF SILENCE
-          </h1>
-          <span className="text-xs md:text-base text-zinc-600 font-light italic select-none">แกลเลอรี่แห่งความเงียบงัน</span>
-        </div>
-        <div className="flex flex-col md:flex-row items-end md:items-center gap-4 mt-6 md:mt-0">
-          <button 
-            onClick={() => setShowCreateModal(true)}
-            className="group flex items-center gap-3 text-xs uppercase tracking-widest hover:text-white transition-colors"
-          >
-            <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">Conjure Memory</span>
-            <Sparkles size={14} className="text-zinc-500 group-hover:text-white transition-colors"/>
-          </button>
-          <button 
-            onClick={() => setIsAmbiencePlaying(!isAmbiencePlaying)}
-            className="group flex items-center gap-3 text-xs uppercase tracking-widest hover:text-white transition-colors"
-          >
-            <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              {isAmbiencePlaying ? 'Silence' : 'Ambience'}
-            </span>
-            {isAmbiencePlaying ? <Volume2 size={14} className="text-zinc-500 group-hover:text-white" /> : <VolumeX size={14} className="text-zinc-500 group-hover:text-white" />}
-          </button>
-        </div>
-      </nav>
+          <nav className="fixed top-0 left-0 w-full px-8 py-6 flex flex-col md:flex-row justify-between items-start md:items-center z-40 bg-gradient-to-b from-black/90 to-transparent border-b border-zinc-900/40">
+            <div className="flex flex-col gap-1">
+              <h1 className="text-2xl md:text-4xl font-serif text-white tracking-tight drop-shadow-lg select-none">
+                GALLERY OF SILENCE
+              </h1>
+              <span className="text-xs md:text-base text-zinc-600 font-light italic select-none">แกลเลอรี่แห่งความเงียบงัน</span>
+            </div>
+            {/* ลบปุ่มออกแล้ว */}
+          </nav>
 
       {/* Main Content */}
       <main className="container mx-auto px-6 md:px-12 pt-40 pb-20">
