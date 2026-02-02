@@ -401,8 +401,9 @@ const App = () => {
       {/* Footer */}
       <footer className="fixed bottom-8 left-8 z-30 hidden md:block mix-blend-difference">
         <div className="text-[9px] text-zinc-500 tracking-[0.2em] flex flex-col gap-2 font-mono">
+          <span>Exhibition BANGKOK</span>
           <span>CURATED BY BUNNY</span>
-          <span>EST. 2024</span>
+          <span>EST. 2026</span>
         </div>
       </footer>
 
